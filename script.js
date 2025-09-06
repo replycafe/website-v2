@@ -267,20 +267,22 @@ const whenSlideShowIsScrolled = () => {
 
 
 
+
+
+scrollableElement.addEventListener('wheel', (event) => {
+    console.log(264, event.deltaX, event.deltaY)
+    // if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
+    if (event.deltaX != 0) {
+        whenSlideShowIsScrolled()
+    // Horizontal scroll detected
+    // console.log("Horizontal scroll:", event.deltaX);
+    // event.preventDefault(); // optional: prevents vertical scrolling
+  }
+})
+scrollableElement.addEventListener('touchmove', whenSlideShowIsScrolled)
+
+
 // tempolarilry disabled ----- consider fix -----
-
-// scrollableElement.addEventListener('wheel', (event) => {
-//     console.log(264, event.deltaX, event.deltaY)
-//     // if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
-//     if (event.deltaX != 0) {
-//         whenSlideShowIsScrolled()
-//     // Horizontal scroll detected
-//     // console.log("Horizontal scroll:", event.deltaX);
-//     // event.preventDefault(); // optional: prevents vertical scrolling
-//   }
-// })
-// scrollableElement.addEventListener('touchmove', whenSlideShowIsScrolled)
-
 
 // const photoDescriptions = document.getElementsByClassName('photo-description')
 
