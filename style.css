@@ -37,7 +37,6 @@ header {
 
 .left-top a{
     text-decoration: none;
-    color: black;
 }
 
 .left-top a:visited {
@@ -757,7 +756,7 @@ header {
     transform: translateX(8rem) translateY(5rem);
     z-index: 50;
 
-    animation: move-y 1.5s infinite alternate ease-in-out;
+    /* animation: move-y 1.5s infinite alternate ease-in-out; */
 }
 
 @keyframes move-y {
@@ -791,6 +790,8 @@ header {
     z-index: 50;
 
     text-align: center;
+
+    /* animation: move-y 1.5s infinite alternate ease-in-out; */
 
 }
 

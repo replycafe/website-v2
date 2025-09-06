@@ -244,8 +244,18 @@
     }
 
     .staff-pick {
-        transform: translateX(17rem) translateY(4rem) rotate(0);
+        transform: translateX(17rem) translateY(3rem) rotate(0);
     }
+
+    /* @keyframes move-y {
+        from {
+        transform: translateX(17rem) translateY(2rem);
+        }
+        to {
+        transform: translateX(17rem) translateY(2rem);
+        } */
+
+    /* } */
 
     .seasonal-special {
         transform: translateX(18rem) translateY(4rem) rotate(0);
