@@ -265,69 +265,90 @@ const whenSlideShowIsScrolled = () => {
     }  
 }
 
-scrollableElement.addEventListener('wheel', (event) => {
-    console.log(264, event.deltaX, event.deltaY)
-    // if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
-    if (event.deltaX != 0) {
-        whenSlideShowIsScrolled()
-    // Horizontal scroll detected
-    // console.log("Horizontal scroll:", event.deltaX);
-    // event.preventDefault(); // optional: prevents vertical scrolling
-  }
-})
-scrollableElement.addEventListener('touchmove', whenSlideShowIsScrolled)
 
 
-const photoDescriptions = document.getElementsByClassName('photo-description')
+// tempolarilry disabled ----- consider fix -----
 
-for (let index = 0; index < photoDescriptions.length; index++) {
-    const element = photoDescriptions[index];
-    element.addEventListener('touchend', (e) => {
-        if(e.cancelable){
-            e.preventDefault()
-        }
-        element.classList.toggle('photo-description-tap-active');
-    })
-}
+// scrollableElement.addEventListener('wheel', (event) => {
+//     console.log(264, event.deltaX, event.deltaY)
+//     // if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
+//     if (event.deltaX != 0) {
+//         whenSlideShowIsScrolled()
+//     // Horizontal scroll detected
+//     // console.log("Horizontal scroll:", event.deltaX);
+//     // event.preventDefault(); // optional: prevents vertical scrolling
+//   }
+// })
+// scrollableElement.addEventListener('touchmove', whenSlideShowIsScrolled)
 
-const basesellerPhotos = document.getElementsByClassName('beseseller-photo')
 
-for (let index = 0; index < basesellerPhotos.length; index++) {
-    const element = basesellerPhotos[index];
-    element.addEventListener('touchend', (e) => {
-        console.log(e)
-        // if (Math.abs(e.deltaX)<5 && Math.abs(e.deltaY)<5) {
-        if(e.cancelable){
-            e.preventDefault()
-        }
+// const photoDescriptions = document.getElementsByClassName('photo-description')
+
+// for (let index = 0; index < photoDescriptions.length; index++) {
+//     const element = photoDescriptions[index];
+//     element.addEventListener('touchend', (e) => {
+//         if(e.cancelable){
+//             e.preventDefault()
+//         }
+//         element.classList.toggle('photo-description-tap-active');
+//     })
+// }
+
+// const basesellerPhotos = document.getElementsByClassName('beseseller-photo')
+
+// for (let index = 0; index < basesellerPhotos.length; index++) {
+//     const element = basesellerPhotos[index];
+//     element.addEventListener('touchend', (e) => {
+//         console.log(e)
+//         // if (Math.abs(e.deltaX)<5 && Math.abs(e.deltaY)<5) {
+//         if(e.cancelable){
+//             e.preventDefault()
+//         }
         
-        element.classList.toggle('photo-img-active');
-        // }
+//         element.classList.toggle('photo-img-active');
+//         // }
         
-    })
-}
+//     })
+// }
 
-document.querySelector('.bestseller-photos').addEventListener('mousemove', (e) => {
+// document.querySelector('.bestseller-photos').addEventListener('mousemove', (e) => {
 
-    console.log(298)
-    // e.preventDefault()
+//     console.log(298)
+//     // e.preventDefault()
 
-    for (let index = 0; index < basesellerPhotos.length; index++) {
-        const element = basesellerPhotos[index];
-        // element.addEventListener('touchstart', (e) => {
-            // e.preventDefault()
-            element.classList.remove('photo-img-active')
-            // element.classList.remove('photo-description-tap-active');
-        // })
-    }
+//     for (let index = 0; index < basesellerPhotos.length; index++) {
+//         const element = basesellerPhotos[index];
+//         // element.addEventListener('touchstart', (e) => {
+//             // e.preventDefault()
+//             element.classList.remove('photo-img-active')
+//             // element.classList.remove('photo-description-tap-active');
+//         // })
+//     }
 
-    for (let index = 0; index < photoDescriptions.length; index++) {
-        const element = photoDescriptions[index];
+//     for (let index = 0; index < photoDescriptions.length; index++) {
+//         const element = photoDescriptions[index];
 
-        element.classList.remove('photo-description-tap-active');
+//         element.classList.remove('photo-description-tap-active');
     
-    }
-})
+//     }
+// })
+
+
+
+
+
+
+// tempolarilry disabled ----- consider fix END-----
+
+
+
+
+
+
+
+
+
+
 
 // addEventListener("mousemove", (event) => {
 //     for (let index = 0; index < basesellerPhotos.length; index++) {
