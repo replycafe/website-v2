@@ -76,6 +76,8 @@
         font-size: 1.2rem;
     }
 
+    
+
 
     .featured-item-image img {
         height: 24rem;
@@ -130,7 +132,7 @@
 
 
     .new-badge {
-        transform: translateX(6.5rem);
+        transform: translateX(6.5rem) translateY(5rem);
         /* animation: move-y 1.5s infinite alternate ease-in-out; */
     }
 
@@ -229,7 +231,7 @@
     }
 
     .new-badge {
-        transform: translateX(15rem);
+        transform: translateX(16rem) translateY(5rem);
         /* animation: move-y 1.5s infinite alternate ease-in-out; */
     }
 
@@ -361,7 +363,7 @@
 
 @media only screen and (max-width: 431px) {
     .new-badge {
-        transform: translateX(10rem);
+        transform: translateX(10rem) translateY(5rem);
         /* animation: move-y 1.5s infinite alternate ease-in-out; */
     }
 
