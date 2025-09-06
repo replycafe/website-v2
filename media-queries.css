@@ -1,0 +1,377 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    
+
+    
+
+    .new-badge {
+        transform: translateX(12rem);
+        animation: move-y 1.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes move-y {
+        from {
+        transform: translateX(12rem) translateY(5rem);
+        }
+        to {
+        transform: translateX(12rem) translateY(5.2rem);
+        }
+
+    }
+
+    .staff-pick {
+        transform: translateX(8rem) translateY(4rem) rotate(0);
+    }
+
+    .seasonal-special {
+        transform: translateX(9rem) translateY(4rem) rotate(0);
+    }
+
+    
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+    .header-option {
+        font-size: 1.7rem;
+        transform: translateY(.4rem);
+    }
+
+   
+
+    .featured-item-description {
+        font-size: 2.1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .photo-description {
+        font-size: 2.5rem;
+    }
+
+    .hours-container {
+        width: 5rem;
+    }
+
+    .todays-hour {
+        display: none;
+    }
+
+    .footer-box {
+        padding: 5rem 5rem;
+    }
+
+    .contact-button-header {
+        width: 6rem;
+        font-size: 1.2rem;
+    }
+
+
+    .featured-item-image img {
+        height: 24rem;
+        width: 24rem;
+    }
+
+    .featured-item-image img:hover {
+        /* width: 26rem; */
+
+        height: 24rem;
+        width: 24rem;
+
+        /* object-position: -105px 0px; */
+    }
+
+
+    /* .p-d-inner {
+        font-size: 1.rem;
+    } */
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    .header-options a{
+        display: none;
+    }
+
+    .contact-button-header{
+        display: none;
+    }
+
+    
+
+    .header-menu-bar {
+        display: inline-block;
+    }
+
+    .featured-item-image img {
+        height: 22rem;
+        width: 22rem;
+    }
+
+    .featured-item-image img:hover {
+        /* width: 26rem; */
+
+        height: 22rem;
+        width: 22rem;
+
+        /* object-position: -105px 0px; */
+    }
+
+
+    .new-badge {
+        transform: translateX(6.5rem);
+        animation: move-y 1.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes move-y {
+        from {
+        transform: translateX(6.5rem) translateY(5rem);
+        }
+        to {
+        transform: translateX(6.5rem) translateY(5.2rem);
+        }
+
+    }
+
+    .staff-pick {
+        transform: translateX(4rem) translateY(4rem) rotate(0);
+    }
+
+    
+
+    /* @keyframes move-y {
+        from {
+        transform: translateX(10rem) translateY(5rem);
+        }
+        to {
+        transform: translateX(10rem) translateY(5.2rem);
+        }
+
+    } */
+
+
+    .location-description {
+        padding: 3rem 5rem;
+    }
+
+    .map-description {
+        /* padding: 1rem 4rem; */
+    }
+
+    .footer-container {
+        /* align-items: center; */
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .footer-box {
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+        /* width: 100%; */
+        /* padding: 5rem 10rem; */
+        /* padding-bottom: 1rem; */
+    }
+
+    .footer-itemhead{
+        
+        /* display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .footer-instargam {
+        text-align: inherit;
+    }
+
+    .copyright {
+        margin-top: 5rem;
+    }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    .left-top {
+        /* flex-direction: row-reverse; */
+    }
+
+    .top-logo {
+        padding: 1.5rem 4rem;
+    }
+
+    .hours-container {
+        width: 4rem;
+        
+    }
+
+
+    .featured-container {
+        flex-direction: column;
+    }
+
+    .featured-item {
+        width: 100%;
+        
+        
+    }
+
+    .new-badge {
+        transform: translateX(15rem);
+        animation: move-y 1.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes move-y {
+        from {
+        transform: translateX(15rem) translateY(6rem);
+        }
+        to {
+        transform: translateX(15rem) translateY(6.2rem);
+        }
+
+    }
+
+    .staff-pick {
+        transform: translateX(17rem) translateY(4rem) rotate(0);
+    }
+
+    .seasonal-special {
+        transform: translateX(18rem) translateY(4rem) rotate(0);
+    } 
+
+    .featured-item-image img {
+        width: 30rem;
+        height: 30rem;
+    }
+    .featured-item-image img:hover {
+        width: 30rem;
+        height: 30rem;
+    }
+
+
+
+    .bestseller-photos {
+        flex-direction: column;
+    }
+    .beseseller-photos-half {
+        width: 100%;
+    }
+
+
+
+    .menu-flex {
+        flex-direction: column;
+    }
+
+    .menu-half {
+        width: 100%;
+    }
+
+    .menu-one-third {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .order-online-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .order-title {
+        width: 100%;
+        padding-top: 5rem;
+    }
+
+    .order-button-container {
+        width: 100%;
+
+        padding:5rem 0;
+    }
+
+
+    .location {
+        flex-direction: column-reverse;
+        height: auto;
+        
+    }
+
+    .map-details {
+        width: 100%;
+        padding-bottom: 10rem;
+    }
+
+    .google-map {
+        width: 100%;
+    }
+
+    .story-flex {
+        flex-direction: column;
+
+    }
+
+    .story-photo {
+        width: 100%;
+    }
+
+    .story-description {
+        padding-top: 8rem;
+        width: 100%;
+    }
+
+    .todays-hour {
+        /* font-size: .5rem; */
+        /* width: 9rem; */
+        display: none;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 431px) {
+    .new-badge {
+        transform: translateX(10rem);
+        animation: move-y 1.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes move-y {
+        from {
+        transform: translateX(10rem) translateY(6rem);
+        }
+        to {
+        transform: translateX(10rem) translateY(6.2rem);
+        }
+
+    }
+
+
+    .staff-pick {
+        transform: translateX(8rem) translateY(3rem) rotate(0);
+    }
+
+    .seasonal-special {
+        transform: translateX(9rem) translateY(3rem) rotate(0);
+    } 
+}
+
