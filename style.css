@@ -37,6 +37,7 @@ header {
 
 .left-top a{
     text-decoration: none;
+    color: inherit;
 }
 
 .left-top a:visited {
