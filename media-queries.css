@@ -7,7 +7,7 @@
 
     .new-badge {
         transform: translateX(12rem);
-        animation: move-y 1.5s infinite alternate ease-in-out;
+        /* animation: move-y 1.5s infinite alternate ease-in-out; */
     }
 
     @keyframes move-y {
@@ -131,7 +131,7 @@
 
     .new-badge {
         transform: translateX(6.5rem);
-        animation: move-y 1.5s infinite alternate ease-in-out;
+        /* animation: move-y 1.5s infinite alternate ease-in-out; */
     }
 
     @keyframes move-y {
@@ -230,7 +230,7 @@
 
     .new-badge {
         transform: translateX(15rem);
-        animation: move-y 1.5s infinite alternate ease-in-out;
+        /* animation: move-y 1.5s infinite alternate ease-in-out; */
     }
 
     @keyframes move-y {
@@ -362,7 +362,7 @@
 @media only screen and (max-width: 431px) {
     .new-badge {
         transform: translateX(10rem);
-        animation: move-y 1.5s infinite alternate ease-in-out;
+        /* animation: move-y 1.5s infinite alternate ease-in-out; */
     }
 
     @keyframes move-y {
