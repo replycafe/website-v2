@@ -1,3 +1,5 @@
+
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
@@ -42,8 +44,13 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
 
-    .header-option {
+    .header-option{
         font-size: 1.7rem;
+        transform: translateY(.4rem);
+    }
+
+    .header-instagram {
+        font-size: 1.8rem;
         transform: translateY(.4rem);
     }
 
