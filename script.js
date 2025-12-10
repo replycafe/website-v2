@@ -511,6 +511,7 @@ document.addEventListener('click', function(event) {
 
         // hoursExpandButton.style.height = '7rem'
         hoursElement.style.paddingTop = "5.0rem"
+        hoursElement.style.paddingBottom = "0rem"
     } else {
         hoursExpandButton.innerHTML = '<i class="fa fa-angle-down" aria-hidden="true"></i>'
         expandElement.style.display = 'none'
@@ -518,6 +519,7 @@ document.addEventListener('click', function(event) {
         // expandElement.style.opacity = '0'
         
         hoursElement.style.paddingTop = "2.5rem"
+        hoursElement.style.paddingBottom = "2.9rem"
     }
 
 
