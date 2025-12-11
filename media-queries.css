@@ -71,7 +71,7 @@
 
     .featured-half-right img {
         margin-top: 12rem;
-        
+        overflow: visible;
         transform: translateX(-5rem);
     }
 
@@ -280,7 +280,8 @@
     
 
     .gingerbread-person-cookie-description-inner {
-        margin-left: 1rem;
+        margin-left: -3rem;
+        /* margin-right: 1rem; */
     }
 
     .winter-menu-title {
