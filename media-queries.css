@@ -469,7 +469,10 @@
     }
 
     .gingerbread-person-cookie-description-inner {
+        margin-left: 0;
     }
+
+    
 
     .featured-half-right img {
         margin-top: 0rem;
