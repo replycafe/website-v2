@@ -123,6 +123,8 @@
         font-size: 1.2rem;
     }
 
+
+
     
 
 
@@ -138,6 +140,11 @@
         width: 24rem;
 
         /* object-position: -105px 0px; */
+    }
+
+
+    .location-description {
+        padding: 3rem 6rem;
     }
 
     
@@ -183,6 +190,9 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 
+    .header-option{
+        display: none;
+    }
     .header-options a{
         display: none;
     }
