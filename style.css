@@ -1780,7 +1780,10 @@ footer {
 
 .footer-box {
     width: 33.3%;
-    padding: 5rem 10rem;
+    padding-top: 5rem;
+    padding-left: 10rem;
+    padding-bottom: 5rem;
+    /* padding: 5rem 10rem; */
 }
 
 .footer-box a {

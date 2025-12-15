@@ -115,7 +115,8 @@
     }
 
     .footer-box {
-        padding: 5rem 5rem;
+        /* padding: 5rem 5rem; */
+        padding-left: 7.5rem;
     }
 
     .contact-button-header {
@@ -264,8 +265,9 @@
 
     .footer-container {
         /* align-items: center; */
+
         align-items: flex-start;
-        flex-direction: column;
+        /* flex-direction: column; */
         padding-top: 2rem;
     }
 
@@ -310,6 +312,10 @@
 
         /* padding-top: 0; */
 
+    }
+
+    .footer-box {
+        padding-left: 4rem;
     }
 
 }
