@@ -532,6 +532,23 @@
     }
 
 
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-box {
+        width: 100%;
+        /* text-align: center; */
+        /* flex-direction: column; */
+    }
+
+    .footer-item-head {
+        /* width: 100%; */
+
+    }
+
+
     
 }
 
