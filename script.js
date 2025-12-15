@@ -672,3 +672,14 @@ const scrollToSection = (sectionName) => {
     el.scrollIntoView({ behavior: 'smooth' });
     closeMobileMenu()
 }
+
+
+
+
+const copyrightYearElement = document.getElementById('copyright-year')
+
+const currentDate = new Date()
+const currentYear = currentDate.getFullYear()
+
+copyrightYearElement.innerHTML = currentYear
+
