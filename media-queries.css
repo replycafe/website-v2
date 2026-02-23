@@ -78,6 +78,14 @@
     .featured-section {
         background-position: 30% 50%;
     }
+
+    .fixed-background-image img {
+        object-position: 55% 100%;
+    }
+
+    .transparent-window-2 {
+        height: 70rem;
+    }
 }
 
 
@@ -318,6 +326,10 @@
         padding-left: 4rem;
     }
 
+    .transparent-window-2 {
+        height: 35rem;
+    }
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
@@ -546,6 +558,15 @@
     .footer-item-head {
         /* width: 100%; */
 
+    }
+
+    .fixed-background-image img {
+        object-position: 70% 100%;
+    }
+
+    .transparent-window-2 {
+        /* height: 0rem; */
+        display: none;
     }
 
 
