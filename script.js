@@ -3,7 +3,6 @@
 
 
 
-
 //automatically add dots based on number of images in slideshow
 
 const photoClassElements = document.getElementsByClassName('photo')
@@ -228,6 +227,7 @@ const pauseScroll = () => {
     console.log('pausescroll called')
     elem.style.width = 0
     // id = null
+
     clearInterval(id)
 
     document.getElementById('autoplay').innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>'
@@ -272,14 +272,18 @@ const whenSlideShowIsScrolled = () => {
 scrollableElement.addEventListener('wheel', (event) => {
     console.log(264, event.deltaX, event.deltaY)
     // if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
-    if (event.deltaX != 0) {
+    if (event.deltaX != 0 && event.deltaY == 0) {
         whenSlideShowIsScrolled()
     // Horizontal scroll detected
     // console.log("Horizontal scroll:", event.deltaX);
     // event.preventDefault(); // optional: prevents vertical scrolling
   }
 })
+
+
+
 scrollableElement.addEventListener('touchmove', whenSlideShowIsScrolled)
+// scrollableElement.addEventListener('touchmove', pauseScroll)
 
 
 // tempolarilry disabled ----- consider fix -----
