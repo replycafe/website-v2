@@ -26,7 +26,7 @@ body {
     /* height: 30rem; */
     position: fixed;
     top: 0;
-    z-index: -200;
+    z-index: -5;
     height: 100vh;
     width: 100%;
     object-fit: cover;
@@ -84,6 +84,8 @@ header {
 .hours-container {
 
     
+
+    
     max-height: 7rem;
     
     overflow: visible;
@@ -120,6 +122,8 @@ header {
     font-size: 1.4rem;
 
     display: flex;
+
+    cursor: pointer;
 
 
     
@@ -471,7 +475,11 @@ header {
     /* position: relative; */
     /* overflow-x: hidden; */
 
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling: touch; */
+
+    /* touch-action: pan-x; */
+
+    /* z-index: 10; */
 }
 
 
@@ -643,7 +651,14 @@ header {
 .background-bar {
     height: .2rem;
     /* display: inline-block; */
+
+
     background-color: #6e9eff6d;
+
+    background-color: white;
+    z-index: 10;
+
+
     /* background-color: #ffffff33; */
     /* background-color: red; */
     width: 100%;
@@ -654,9 +669,16 @@ header {
 }
 
 .progress-bar-background {
+    /* background-color: white;
+    height: .2rem;
+    z-index: 5; 
+    position: absolute;
+    width: 100%; */
 }
 
 .progress-bar {
+    
+    z-index: 3;
     height: .2rem;
     /* position: sticky; */
     /* display: inline-block; */
@@ -1823,7 +1845,10 @@ header {
 footer {
     /* height: 20rem; */
     /* background-color: rgba(217, 217, 217, 0.316); */
-    background-color: rgb(248, 248, 248);
+
+    /* background-color: rgb(248, 248, 248); */
+
+    background-color: white;
     /* display: none; */
     width: 100%;
     
