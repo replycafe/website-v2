@@ -693,10 +693,32 @@ header {
 }
 
 
-
-
-
 .featured-section {
+    background-image: url(stone-texture1.jpg);
+
+    /* background-image: url('/ChatGPT\ Image\ Dec\ 9\,\ 2025\,\ 12_25_24\ PM.png'); */
+    /* background-image: url('/ChatGPT\ Image\ Dec\ 9\,\ 2025\,\ 03_43_49\ PM.png'); */
+    
+    /* background-image: url('/christmas-less-horizontal.png'); */
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.266), rgba(255, 255, 255, 0)), url('/christmas-less-horizontal.png'); */
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0)), url('/christmas-less-horizontal.png'); */
+    
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0)), url('/christmas-less-horizontal.png'); */
+    
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0)), url('/christmas-less-horizontal2.png'); */
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-top: 5rem;
+    /* filter: brightness(120%); */
+    /* padding-bottom: 5rem; */
+    
+}
+
+
+
+
+.featured-section-christmas {
     /* background-image: url(stone-texture1.jpg); */
     /* background-image: url('/ChatGPT\ Image\ Dec\ 9\,\ 2025\,\ 12_25_24\ PM.png'); */
     /* background-image: url('/ChatGPT\ Image\ Dec\ 9\,\ 2025\,\ 03_43_49\ PM.png'); */
@@ -714,6 +736,8 @@ header {
     /* padding-bottom: 5rem; */
     
 }
+
+
 
 .marble-transition {
     margin-top: .2rem;
@@ -1271,6 +1295,17 @@ header {
     padding-top: 5rem;
     background-color: white;
     
+}
+
+.section-title-trasnparent-bg {
+    text-align: center;
+    /* padding-top: 3rem; */
+    padding-top: 1rem;
+    padding-bottom: 7rem;
+
+    font-size: 3rem;
+    font-weight: 100;
+    background-color: transparent;
 }
 
 .section-title {

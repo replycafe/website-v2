@@ -173,8 +173,13 @@
     }
 
     .featured-section {
+
+    }
+
+    .featured-section-christmas {
         background-size: cover;
         background-position: 20% 50%;
+
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0)), url('/christmas-media-query.png');
 
     }
