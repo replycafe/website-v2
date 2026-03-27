@@ -687,3 +687,18 @@ const currentYear = currentDate.getFullYear()
 
 copyrightYearElement.innerHTML = currentYear
 
+
+
+const copyToClipboard = (rootElement, textToCopy) => {
+
+    navigator.clipboard.writeText(textToCopy)
+
+    rootElement.classList.remove('fa-clone')
+    rootElement.classList.add('fa-check')
+
+    setTimeout(() => {
+        rootElement.classList.remove('fa-check')
+        rootElement.classList.add('fa-clone')
+    }, 2000)
+}
+
