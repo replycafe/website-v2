@@ -435,7 +435,7 @@ button:hover {
 .front {
 
     
-    font-weight: 300;
+    font-weight: 200;
 
     font-size: 1.5rem;
 
@@ -455,6 +455,10 @@ button:hover {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+#ContactEmail {
+    font-weight: 300;
 }
 
 
