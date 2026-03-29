@@ -469,20 +469,31 @@ const refreshOpenorClosed = () => {
     console.log(todaysOpenStartFromMin)
     console.log(todaysOpenEndAtMin)
 
-    if (todaysOpenEndAtMin == 0){
-        todaysOpenEndAtMin = 59
-        todaysOpenEndAtHour -= 1
+
+    const refreshOpenNowOrClosed = () => {
+        if (todaysOpenEndAtMin == 0){
+            todaysOpenEndAtMin = 59
+            todaysOpenEndAtHour -= 1
+        }
+
+        if (today.getHours() >= todaysOpenStartFromHour && today.getHours() <= todaysOpenEndAtHour
+            && today.getMinutes() >= todaysOpenStartFromMin && today.getMinutes() <= todaysOpenEndAtMin) {
+
+            document.getElementById('todays-hour').innerHTML = `${openHoursList[today.getDay()].openFrom} - ${openHoursList[today.getDay()].endAt}`
+        } else {
+            document.getElementById('hour-title').innerHTML = 'Closed'
+            document.getElementById('hour-title').style.color = 'red'
+            document.getElementById('todays-hour').innerHTML = ''
+        }
     }
 
-    if (today.getHours() >= todaysOpenStartFromHour && today.getHours() <= todaysOpenEndAtHour
-        && today.getMinutes() >= todaysOpenStartFromMin && today.getMinutes() <= todaysOpenEndAtMin) {
+    refreshOpenNowOrClosed()
 
-        document.getElementById('todays-hour').innerHTML = `${openHoursList[today.getDay()].openFrom} - ${openHoursList[today.getDay()].endAt}`
-    } else {
-        document.getElementById('hour-title').innerHTML = 'Closed'
-        document.getElementById('hour-title').style.color = 'red'
-        document.getElementById('todays-hour').innerHTML = ''
-    }
+
+    setInterval(refreshOpenNowOrClosed, 60 * 1000)
+
+
+    
 }
 
 refreshOpenorClosed()
