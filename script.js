@@ -225,7 +225,10 @@ const scrollPlay = () => {
 
 const pauseScroll = () => {
     console.log('pausescroll called')
+
     elem.style.width = 0
+
+
     // id = null
 
     clearInterval(id)
@@ -282,7 +285,14 @@ scrollableElement.addEventListener('wheel', (event) => {
 
 
 
+// ----------------------this!    
 scrollableElement.addEventListener('touchmove', whenSlideShowIsScrolled)
+
+
+
+
+
+
 // scrollableElement.addEventListener('touchmove', pauseScroll)
 
 
@@ -722,14 +732,20 @@ let lastScrollTop = 0
 window.addEventListener("scroll", function () {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (currentScroll > lastScrollTop) {
-    console.log("Scrolling down")
-    document.getElementById('header').classList.add('header-hide-as-scroll')
+  if (lastScrollTop >= 70) {
 
-  } else if (currentScroll < lastScrollTop) {
-    console.log("Scrolling up")
-    document.getElementById('header').classList.remove('header-hide-as-scroll')
+    if (currentScroll > lastScrollTop) {
+        console.log("Scrolling down")
+        document.getElementById('header').classList.add('header-hide-as-scroll')
+
+    } else if (currentScroll < lastScrollTop) {
+        console.log("Scrolling up")
+        document.getElementById('header').classList.remove('header-hide-as-scroll')
+    }
+
   }
+
+  
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // prevent negative
 })
