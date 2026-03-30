@@ -689,6 +689,7 @@ const scrollToCategory = (idName) => {
     const el = document.getElementById(idName)
 
     el.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('header').classList.remove('header-hide-as-scroll')
 }
 
 
@@ -696,6 +697,7 @@ const scrollToSection = (sectionName) => {
     const el = document.getElementById(sectionName)
     el.scrollIntoView({ behavior: 'smooth' });
     closeMobileMenu()
+    document.getElementById('header').classList.remove('header-hide-as-scroll')
 }
 
 
@@ -727,25 +729,25 @@ const copyToClipboard = (rootElement, textToCopy) => {
 
 // header hide as scroll detection 
 
-let lastScrollTop = 0
+// let lastScrollTop = 0
 
-window.addEventListener("scroll", function () {
-  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+// window.addEventListener("scroll", function () {
+//   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (lastScrollTop >= 70) {
+//   if (lastScrollTop >= 70) {
 
-    if (currentScroll > lastScrollTop) {
-        console.log("Scrolling down")
-        document.getElementById('header').classList.add('header-hide-as-scroll')
+//     if (currentScroll > lastScrollTop) {
+//         console.log("Scrolling down")
+//         document.getElementById('header').classList.add('header-hide-as-scroll')
 
-    } else if (currentScroll < lastScrollTop) {
-        console.log("Scrolling up")
-        document.getElementById('header').classList.remove('header-hide-as-scroll')
-    }
+//     } else if (currentScroll < lastScrollTop) {
+//         console.log("Scrolling up")
+//         document.getElementById('header').classList.remove('header-hide-as-scroll')
+//     }
 
-  }
+//   }
 
   
 
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // prevent negative
-})
+//   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // prevent negative
+// })

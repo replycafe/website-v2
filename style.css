@@ -659,7 +659,14 @@ button:hover {
     padding-top: 7rem;
     /* margin-top: 7rem; */
     /* background-color: azure; */
+
     background-color: rgba(203, 203, 203, 0.779);
+    /* background-color: rgba(203, 203, 203, 0); */
+    /* background-color: white; */
+
+
+
+
     height: 40rem;
     white-space: nowrap;
     overflow: hidden;
@@ -1786,7 +1793,7 @@ button:hover {
 .location-section {
     border-top: 1px solid rgba(195, 195, 195, 0.447);
 
-    scroll-margin-top:7rem; 
+    scroll-margin-top:7rem;
 
     border-bottom: 1px solid rgba(195, 195, 195, 0.447);
 
