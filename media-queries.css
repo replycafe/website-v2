@@ -120,6 +120,9 @@
         padding-right: 3.5rem;
         padding-left: 3.5rem;
     }
+    body:has(.btn-container:hover) .hours-container{
+        padding-right: 0;
+    }
 
     .btn-container-mobile:hover {
         margin-left: 0;
@@ -159,6 +162,7 @@
 
     .hours-container {
         width: 5rem;
+        
     }
 
     .todays-hour {
