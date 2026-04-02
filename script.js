@@ -433,7 +433,7 @@ const refreshOpenorClosed = () => {
 
     const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
-    const today = new Date()
+    let today = new Date()
     console.log(today.getDay())
 
     for (let index = 0; index < openHoursList.length; index++) {
@@ -472,15 +472,19 @@ const refreshOpenorClosed = () => {
     // console.log(todaysOpenStartFromMin)
 
 
-    console.log(today.getHours())
-    console.log(today.getMinutes())
-    console.log(todaysOpenStartFromHour)
-    console.log(todaysOpenEndAtHour)
-    console.log(todaysOpenStartFromMin)
-    console.log(todaysOpenEndAtMin)
+    // console.log(today.getHours())
+    // console.log(today.getMinutes())
+    // console.log(todaysOpenStartFromHour)
+    // console.log(todaysOpenEndAtHour)
+    // console.log(todaysOpenStartFromMin)
+    // console.log(todaysOpenEndAtMin)
 
 
     const refreshOpenNowOrClosed = () => {
+        today = new Date()
+
+        console.log("refreshopen or closed", 484)
+        
         if (todaysOpenEndAtMin == 0){
             todaysOpenEndAtMin = 59
             todaysOpenEndAtHour -= 1
@@ -488,9 +492,10 @@ const refreshOpenorClosed = () => {
 
         if (today.getHours() >= todaysOpenStartFromHour && today.getHours() <= todaysOpenEndAtHour
             && today.getMinutes() >= todaysOpenStartFromMin && today.getMinutes() <= todaysOpenEndAtMin) {
-
+            // console.log(494, 'debug')
             document.getElementById('todays-hour').innerHTML = `${openHoursList[today.getDay()].openFrom} - ${openHoursList[today.getDay()].endAt}`
         } else {
+            // console.log(497, 'debug')
             document.getElementById('hour-title').innerHTML = 'Closed'
             document.getElementById('hour-title').style.color = 'red'
             document.getElementById('todays-hour').innerHTML = ''
