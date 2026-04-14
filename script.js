@@ -493,6 +493,8 @@ const refreshOpenorClosed = () => {
         if (today.getHours() >= todaysOpenStartFromHour && today.getHours() <= todaysOpenEndAtHour
             && today.getMinutes() >= todaysOpenStartFromMin && today.getMinutes() <= todaysOpenEndAtMin) {
             // console.log(494, 'debug')
+            document.getElementById('hour-title').innerHTML = 'Open'
+            document.getElementById('hour-title').style.color = 'rgb(113, 131, 248)'
             document.getElementById('todays-hour').innerHTML = `${openHoursList[today.getDay()].openFrom} - ${openHoursList[today.getDay()].endAt}`
         } else {
             // console.log(497, 'debug')
