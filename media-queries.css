@@ -247,7 +247,33 @@
         font-size: 1.rem;
     } */
 
+
+
+
+
 }
+
+
+/* minor viewport width */
+@media only screen and (max-width: 800px) {
+    .hours-container {
+        padding-right: 0rem;
+    }
+
+    .header-options {
+        padding-right: 1.5rem;
+    }
+
+    .top-logo {
+        padding: 1.5rem 4rem 1.5rem 4rem;
+    }
+}
+
+
+
+
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 
@@ -310,6 +336,19 @@
 
     .staff-pick {
         transform: translateX(4rem) translateY(4rem) rotate(0);
+    }
+
+
+    .gift-card-img {
+        /* height: 70%; */
+        width: 80%;
+        height: auto;
+    }
+
+    .gift-card-img:hover {
+        /* height: 75%; */
+        width: 85%;
+        height: auto;
     }
 
     
@@ -448,6 +487,38 @@
         } */
 
     /* } */
+
+
+    .gift-card-section {
+        flex-direction: column;
+        /* padding: 10rem 0; */
+    }
+
+    .gift-card-section {
+        height: auto;
+    }
+
+    .gift-card-flex-half {
+        width: 100%;
+        
+    }
+
+    .gift-card-title {
+        padding-top: 10rem;
+        padding-bottom: 7rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .gift-card-img {
+        width: 70%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .gift-card-img:hover {
+        width: 75%;
+    }
 
     .seasonal-special {
         transform: translateX(18rem) translateY(4rem) rotate(0);
@@ -673,6 +744,14 @@
         width: 100%;
         transform: scale(.9);
         overflow: visible;
+    }
+
+    .gift-card-img {
+        width: 80%;
+
+    }
+    .gift-card-img:hover {
+        width: 85%;
     }
 
     /* .featured-section {
