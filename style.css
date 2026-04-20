@@ -522,9 +522,13 @@ button:hover {
 .header-gift-card-mobile {
     margin-top: 5rem;
     margin-left: 0;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 200;
     padding: 1.5rem 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
