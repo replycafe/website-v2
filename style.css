@@ -358,6 +358,14 @@ header {
     
 }
 
+body:has(.btn-container:hover) .header-gift-card {
+    width: 0rem;
+    padding: 0;
+    height: 0;
+    font-size: 0rem;
+    margin: 0;
+}
+
 .button-wrap {
     /* width: max-content;
     height: 3rem; */
@@ -493,7 +501,23 @@ button:hover {
 
     /* clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%); */
     border-radius: 3rem;
+
+
+    overflow: hidden;
+
+    width: 8rem;
+    transition: width .5s ease, padding 1.4s ease, font-size .5s ease, height .8s ease, margin-right 1.4s ease, margin-left 1.4s ease;
+
+    height: 2rem;
+
+    /* display: none; */
 }
+
+/* .header-gift-card:hover {
+    width: 0;
+    padding: 0;
+    height: 0;
+} */
 
 .header-gift-card-mobile {
     margin-top: 5rem;
