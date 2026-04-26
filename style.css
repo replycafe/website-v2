@@ -520,6 +520,47 @@ button:hover {
 } */
 
 .header-gift-card-mobile {
+
+
+
+    padding: 1rem 2rem;
+    /* background-color: rgb(53, 53, 53); */
+    /* background: linear-gradient(to top left, black, rgb(105, 105, 105)) ; */
+    /* background: linear-gradient(to top left, rgb(0, 151, 177), rgb(0, 8, 255)) ; */
+    /* background: linear-gradient(to top left, rgb(128, 0, 255), rgb(54, 1, 146)) ; */
+    /* background: linear-gradient(to bottom right, rgb(0, 255, 13), rgb(54, 1, 146)) ; */
+    /* background: linear-gradient(to top left, rgb(255, 170, 0), rgb(255, 30, 0)) ; */
+    /* background: linear-gradient(to top left, rgb(0 162 177), rgb(255 236 0)); */
+    /* background: linear-gradient(to bottom right, rgb(0 162 177), rgb(255 236 0)); */
+    /* background: linear-gradient(to bottom, rgb(0 162 177), rgb(255 236 0)); */
+    background: linear-gradient(to bottom, rgb(0, 177, 103), rgb(204, 232, 48));
+    /* border-radius: 3rem; */
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+
+    /* display: inline-flex; */
+    white-space: nowrap;
+
+    /* clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%); */
+    border-radius: 3rem;
+
+
+    overflow: hidden;
+
+    width: 8rem;
+    transition: width .5s ease, padding 1.4s ease, font-size .5s ease, height .8s ease, margin-right 1.4s ease, margin-left 1.4s ease;
+
+    height: 2rem;
+
+    /* display: none; */
+
+
+
+
+
+
+
     margin-top: 5rem;
     margin-left: 0;
     font-size: 1.6rem;
@@ -529,6 +570,8 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* display: none;s */
 }
 
 
